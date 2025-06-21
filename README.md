@@ -88,3 +88,11 @@ O texto extraído é pré anotado por uma llm em um unico arquivo que é usado p
 ## Licenças
 
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](docs/LICENSE) para mais detalhes.
+
+## Problemas e desenvolvimento futuro
+
+Armazenamento: são muitos arquivos zips, xml e de texto que devem ser armazenados. possivelmente em banco noSQL como mongodb mas o texto pode ser armazenado em postgres também.
+
+Capacidade da máquina: São muitos, muitos arquivos mesmo, ao ponto de ficar perdido e demorar até para extrair o texto de todos os xmls. Piora ainda mais ao tentar fazer o fine-tunning da llm que apesar de possivel é extremamente exaustivo e demorado.
+
+Estrutura: esse pipeline não deveria estar com arquivos soltos dessa forma, deveriam estar orquestrados por um airflow em um container docker para um ambiente profissinal.
