@@ -1,0 +1,6 @@
+# Virtual environment
+venv/
+
+# Arquivos baixados e processados
+src/zips/
+src/xmls/
