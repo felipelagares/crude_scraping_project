@@ -31,3 +31,7 @@ def extract_texts():
                 f.write(texto_final)
         else:
             print(f"[!] Tag <Texto> não encontrada em: {nome_arquivo}")
+
+if __name__ == "__main__":
+    extract_texts()
+    print("Extração de textos concluída.")

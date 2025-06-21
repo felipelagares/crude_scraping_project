@@ -14,3 +14,7 @@ def extract_xmls():
         if zip_filename.lower().endswith('.zip'):
             zip_path = os.path.join('zips', zip_filename)
             extract_xmls_from_zip(zip_path, 'xmls')
+
+if __name__ == "__main__":
+    extract_xmls()
+    print("Extração de XMLs concluída.")

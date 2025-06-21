@@ -1,6 +1,6 @@
 import os
 
-def concat_text(pasta_textos='textos', arquivo_saida='full_text.txt'):
+def concat_text(pasta_textos='textos', arquivo_saida='data/full_text.txt'):
     # Concatena os textos em um arquivo temporário
     with open(arquivo_saida, 'w', encoding='utf-8') as saida:
         for nome_arquivo in os.listdir(pasta_textos):
@@ -9,3 +9,7 @@ def concat_text(pasta_textos='textos', arquivo_saida='full_text.txt'):
                 with open(caminho, 'r', encoding='utf-8') as f:
                     saida.write(f.read())
                     saida.write('\n')  # separa os textos por uma linha em branco
+
+if __name__ == "__main__":
+    concat_text()
+    print("Concatenação de textos concluída.")
